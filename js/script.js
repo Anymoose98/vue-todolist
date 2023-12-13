@@ -24,12 +24,22 @@ createApp({
     }
   },
   methods: {
+    // Se fatto sbarra la scritta
     eseguito(index){
         if(this.coseDaFare[index].fatto === false){
 
             this.coseDaFare[index].fatto = true
         }
+        else{
+            this.coseDaFare[index].fatto = false
+        }
     },
+
+    // cancella la linea
+    cancella(index){
+        console.log("funziona")
+        this.coseDaFare.splice(index,1);
+    }
   }
 
 
