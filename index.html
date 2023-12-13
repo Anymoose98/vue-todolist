@@ -9,7 +9,7 @@
 </head>
 <body>
     <div id="app">
-        <!-- header titolo e logo -->
+        <!-- header titolo + logo + Scritta-->
          <header class="container-fluid">
             <div class="row altezza-100 align-items-center">
                 <!-- logo e titolo -->
@@ -24,6 +24,8 @@
                         <h1>ist</h1>
                     </div>
                 </div>
+
+                <!-- Scritta -->
                 <div class="col-6">
                     <div class="contenuto-header mx-3">
                         <h1 class="float-end">Fai <span class="color-red">oggi</span>  ciò che <span class="color-red">puoi</span> fare anche <span class="color-red">domani</span></h1>
@@ -31,6 +33,29 @@
                 </div>
             </div>
          </header>
+
+         <!-- Parte principale paggina -->
+         <main class="my-5">
+            <div class="row">
+                <!-- Titolo centrale -->
+                <div class="col-12 text-center">
+                    <div class="titolo-main d-flex justify-content-center my-3">
+                        <h1 class="color-red">T</h1>
+                        <h1>o</h1>
+                        <h1 class="color-red">d</h1>
+                        <h1>o</h1>
+                        <h1 class="color-red"> L</h1>
+                        <h1>ist</h1>
+                    </div>
+                </div>
+
+                <!-- Lista cose da fare -->
+                <ul class="list-unstyled">
+                    <li v-for="(cose, index) in coseDaFare" :key="index" :class="cose.fatto ? 'text-decoration-line-through' : ''" >{{coseDaFare[index].text}}</li>
+                </ul>
+            </div>
+
+         </main>
     </div>
     <script src='https://unpkg.com/vue@3/dist/vue.global.js'></script>
     <script src="./js/script.js"></script>

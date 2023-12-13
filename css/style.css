@@ -21,3 +21,12 @@ header{
 .logo-img{
     height: 50px;
 }
+
+/* main */
+main{
+    margin: auto;
+    width: 800px;
+    height: 600px;
+    background-color: rgb(208, 203, 203)
+}
+

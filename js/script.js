@@ -10,7 +10,7 @@ createApp({
             },
             {
                 text:"Comprare i regali",
-                fatto: false,
+                fatto: true,
             },
             {
                 text:"Fare la spesa",
