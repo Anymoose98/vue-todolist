@@ -3,6 +3,8 @@ const { createApp } = Vue
 createApp({
   data() {
     return {
+        aggiunto:"",
+
         coseDaFare:[
             {
                 text:"Attivare la carta",
@@ -35,10 +37,22 @@ createApp({
         }
     },
 
-    // cancella la linea
+    // cancella la
     cancella(index){
-        console.log("funziona")
         this.coseDaFare.splice(index,1);
+    },
+
+    // aggiungere 
+    aggiungereContenuto(){
+        console.log("funziona")
+        let oggetto = {
+            text: this.aggiunto,
+            fatto:false
+        }
+
+        this.coseDaFare.push(oggetto)
+        this.aggiunto = ""
+
     }
   }
 
