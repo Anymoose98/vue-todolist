@@ -66,12 +66,12 @@
                 </div>
 
                 <!-- inserisci nuova cosa da fare -->
-                <div class="col-10">
+                <div class="col-10 my-3">
                     <div class="contenitore">
-                        <input type="text" class="form-control form-control-sm mx-3" placeholder="Inserisci nuova attività" v-model="aggiunto">
+                        <input type="text" class="form-control form-control-sm mx-3" placeholder="Inserisci nuova attività" v-model="aggiunto" @keydown.enter="aggiungereContenuto">
                     </div>
                 </div>
-                <div class="col-2 text-center">
+                <div class="col-2 text-center my-3">
                     <button class="btn btn-sm btn-success mx-1" @click="aggiungereContenuto()">Inserisci</button>
                 </div>
 
