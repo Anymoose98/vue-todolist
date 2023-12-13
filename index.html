@@ -55,7 +55,7 @@
                     <ul class="list-unstyled">
                         <li v-for="(cose, index) in coseDaFare" :key="index" class="my-4 mx-3" :class="cose.fatto ? 'text-decoration-line-through' : ''" >
                             <div class="d-flex justify-content-between">
-                                <h3 @click="eseguito(index)" >{{coseDaFare[index].text}}</h3>
+                                <h3 @click="eseguito(index)" class="cursore" >{{coseDaFare[index].text}}</h3>
                                 <div class="bottoni">
                                     <button class="btn btn-sm  bg-success mx-1" @click="eseguito(index)" ><i class="fa-solid fa-check"></i></button>
                                     <button class="btn btn-sm  bg-danger mx-1" @click="cancella(index)" ><i class="fa-solid fa-xmark"></i></button>
