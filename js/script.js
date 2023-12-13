@@ -10,7 +10,7 @@ createApp({
             },
             {
                 text:"Comprare i regali",
-                fatto: true,
+                fatto: false,
             },
             {
                 text:"Fare la spesa",
@@ -24,7 +24,12 @@ createApp({
     }
   },
   methods: {
-   
+    eseguito(index){
+        if(this.coseDaFare[index].fatto === false){
+
+            this.coseDaFare[index].fatto = true
+        }
+    },
   }
 
 
