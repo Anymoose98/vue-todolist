@@ -57,7 +57,7 @@
                             <div class="d-flex justify-content-between">
                                 <h3 @click="eseguito(index)" class="cursore" >{{coseDaFare[index].text}}</h3>
                                 <div class="bottoni">
-                                    <button class="btn btn-sm  bg-success mx-1 text-white" @click="eseguito(index)" ><i class="fa-solid fa-check"></i></button>
+                                    <button class="btn btn-sm   mx-1 text-white" @click="eseguito(index)" :class="cose.fatto ? 'bg-warning' : 'bg-success'"  ><i class="fa-solid fa-check"></i></button>
                                     <button class="btn btn-sm  bg-danger mx-1 text-white" @click="cancella(index)" ><i class="fa-solid fa-xmark"></i></button>
                                 </div>
                             </div>
